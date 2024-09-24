@@ -2,9 +2,11 @@
 title: "System Details"
 format: html
 jupyter: python3
+execute:
+    echo: False
 ---
 
-```{python, echo=False}
+```{python}
 import multiprocessing
 import pandas as pd
 import platform
@@ -13,7 +15,7 @@ import subprocess
 import sys
 ```
 
-```{python, echo=False}
+```{python}
 def system_details():
     # Host memory
     host_total = psutil.virtual_memory().total
