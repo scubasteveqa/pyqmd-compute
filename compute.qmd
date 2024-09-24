@@ -11,7 +11,9 @@ import platform
 import psutil
 import subprocess
 import sys
+```
 
+```{python}
 from shiny import App, reactive, render, ui
 
 app_ui = ui.page_fluid(
@@ -24,8 +26,9 @@ app_ui = ui.page_fluid(
     ui.input_action_button("log_button", "Log"),
     ui.output_text_verbatim("logged"),
 )
+```
 
-
+```{python}
 def server(input, output, session):
     @output
     @render.table
@@ -68,10 +71,12 @@ def server(input, output, session):
         return l
 
 app = App(app_ui, server)
+```
 
-
+```{python}
 def run(input: list[str]) -> str:
     try:
         return subprocess.check_output(input).decode("utf-8").strip()
     except Exception as e:
         return f"Error: {e}"
+```
