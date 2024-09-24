@@ -2,3 +2,4 @@ pandas
 platformdirs
 psutil
 shiny
+jupyter
