@@ -1,6 +1,5 @@
 pandas
 platformdirs
 psutil
-multiprocessing
 subprocess
 shiny
