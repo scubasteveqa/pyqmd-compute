@@ -4,7 +4,7 @@ format: html
 jupyter: python3
 ---
 
-```{python}
+```{python, echo=False}
 import multiprocessing
 import pandas as pd
 import platform
