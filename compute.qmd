@@ -12,7 +12,8 @@ import psutil
 import subprocess
 import sys
 ```
-```{python}
+
+```{python, echo=False}
 def system_details():
     # Host memory
     host_total = psutil.virtual_memory().total
